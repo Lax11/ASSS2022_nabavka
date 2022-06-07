@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/04/14 22:51:46.000.934,=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/04/14 22:52:33.000.949,C:\Users\lax10\Documents\Embarcadero\Studio\Projects\login.dfm=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/04/14 22:52:33.000.949,C:\Users\lax10\Documents\Embarcadero\Studio\Projects\login.pas=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/04/14 22:58:10.000.340,C:\Users\lax10\Documents\Embarcadero\Studio\Projects\nabavka.dproj=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/04/14 23:08:01.000.851,=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/04/14 23:24:58.000.745,C:\Users\lax10\Documents\Embarcadero\Studio\Projects\nabavka.dproj=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\nabavka.dproj</Transaction>
+    <Transaction>2022/04/14 23:34:37.000.597,C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\nabavka.dproj</Transaction>
+    <Transaction>2022/04/14 23:34:55.000.060,C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/06/01 16:07:49.000.480,=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/01 16:15:36.000.708,C:\Users\lax10\Documents\embacadero2\nabavka.pas=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/01 16:15:36.000.708,C:\Users\lax10\Documents\embacadero2\nabavka.dfm=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/06/01 16:23:11.000.475,=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/01 16:26:17.000.076,C:\Users\lax10\Documents\embacadero2\Unit1.dfm=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/06/01 16:26:17.000.076,C:\Users\lax10\Documents\embacadero2\Unit1.pas=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/01 16:51:10.000.789,=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2022/06/01 16:55:27.000.547,C:\Users\lax10\Documents\embacadero2\Unit3.dfm=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Unit3.dfm</Transaction>
+    <Transaction>2022/06/01 16:55:27.000.547,C:\Users\lax10\Documents\embacadero2\Unit3.pas=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2022/06/01 16:55:33.000.683,C:\Users\lax10\Documents\embacadero2\Project1.dproj=C:\Users\lax10\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/06/01 17:36:48.000.954,=C:\Users\lax10\Documents\embacadero2\Unit2.pas</Transaction>
+    <Transaction>2022/06/01 17:37:17.000.317,C:\Users\lax10\Documents\embacadero2\Unit2.dfm=C:\Users\lax10\Documents\embacadero2\PregledStanja.dfm</Transaction>
+    <Transaction>2022/06/01 17:37:17.000.317,C:\Users\lax10\Documents\embacadero2\Unit2.pas=C:\Users\lax10\Documents\embacadero2\PregledStanja.pas</Transaction>
+    <Transaction>2022/06/01 18:57:20.000.476,=C:\Users\lax10\Documents\embacadero2\Unit4.pas</Transaction>
+    <Transaction>2022/06/01 18:58:05.000.410,C:\Users\lax10\Documents\embacadero2\ZahtevNabavka.pas=C:\Users\lax10\Documents\embacadero2\Unit4.pas</Transaction>
+    <Transaction>2022/06/01 18:58:05.000.410,C:\Users\lax10\Documents\embacadero2\ZahtevNabavka.dfm=C:\Users\lax10\Documents\embacadero2\Unit4.dfm</Transaction>
+    <Transaction>2022/06/01 20:31:50.000.716,=C:\Users\lax10\Documents\embacadero2\Unit5.pas</Transaction>
+    <Transaction>2022/06/01 22:22:44.000.122,=C:\Users\lax10\Documents\embacadero2\Unit6.pas</Transaction>
+    <Transaction>2022/06/01 22:23:10.000.863,C:\Users\lax10\Documents\embacadero2\Unit6.pas=C:\Users\lax10\Documents\embacadero2\DodavanjeZahteva.pas</Transaction>
+    <Transaction>2022/06/01 22:23:10.000.863,C:\Users\lax10\Documents\embacadero2\Unit6.dfm=C:\Users\lax10\Documents\embacadero2\DodavanjeZahteva.dfm</Transaction>
+    <Transaction>2022/06/02 01:18:50.000.038,=C:\Users\lax10\Documents\embacadero2\Unit7.pas</Transaction>
+    <Transaction>2022/06/02 01:19:04.000.349,C:\Users\lax10\Documents\embacadero2\Start.pas=C:\Users\lax10\Documents\embacadero2\Unit7.pas</Transaction>
+    <Transaction>2022/06/02 01:19:04.000.349,C:\Users\lax10\Documents\embacadero2\Start.dfm=C:\Users\lax10\Documents\embacadero2\Unit7.dfm</Transaction>
+    <Transaction>2022/06/02 01:32:37.000.265,=C:\Users\lax10\Documents\embacadero2\Unit8.pas</Transaction>
+    <Transaction>2022/06/07 11:38:55.000.196,=C:\Users\lax10\Documents\embacadero2\Unit9.pas</Transaction>
+    <Transaction>2022/06/07 13:38:48.000.503,=C:\Users\lax10\Documents\embacadero2\Unit10.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="nabavka.pas"/>
+    <File Path="nabavka.dfm"/>
+    <File Path="Unit1.pas"/>
+    <File Path="Unit1.dfm"/>
+    <File Path="Unit3.pas"/>
+    <File Path="Unit3.dfm"/>
+    <File Path="PregledStanja.pas"/>
+    <File Path="PregledStanja.dfm"/>
+    <File Path="ZahtevNabavka.pas"/>
+    <File Path="ZahtevNabavka.dfm"/>
+    <File Path="Unit5.pas"/>
+    <File Path="Unit5.dfm"/>
+    <File Path="DodavanjeZahteva.pas"/>
+    <File Path="DodavanjeZahteva.dfm"/>
+    <File Path="Start.pas"/>
+    <File Path="Start.dfm"/>
+    <File Path="Unit8.pas"/>
+    <File Path="Unit8.dfm"/>
+    <File Path="Unit9.pas"/>
+    <File Path="Unit9.dfm"/>
+    <File Path="Unit10.pas"/>
+    <File Path="Unit10.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>
