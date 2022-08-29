@@ -1,0 +1,135 @@
+object frmPurchaseOrderView: TfrmPurchaseOrderView
+  Left = 450
+  Top = 72
+  Caption = 'Form1'
+  ClientHeight = 573
+  ClientWidth = 742
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  Left = 450
+  Top = 72
+  DesignerMasterStyle = 0
+  object buttonNazad: TButton
+    Position.Y = 520.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = '<- Nazad'
+    OnClick = buttonNazadClick
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 9
+    FilterChar = '0123456789'
+    Position.X = 312.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    Position.X = 304.000000000000000000
+    Position.Y = 488.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'Index'
+    TabOrder = 10
+  end
+  object Button1: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 136.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = 'STAVKE PORUDZBENICE'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 576.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'KREIRAJ NOVU'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 408.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    Text = 'OBRISI'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = Button3Click
+  end
+  object Label7: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 742.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'PORUDZBENICE'
+    TabOrder = 18
+  end
+  object StringGrid1: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 96.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 601.000000000000000000
+    Size.Height = 425.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+    RowCount = 4
+    Viewport.Width = 601.000000000000000000
+    Viewport.Height = 425.000000000000000000
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = mainDataModul.queryPrikazPorudzbenica
+    ScopeMappings = <>
+    Left = 552
+    Top = 48
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 628
+    Top = 45
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <
+        item
+          MemberName = 'Indeks'
+        end
+        item
+          MemberName = 'ImePodnosioca'
+        end
+        item
+          MemberName = 'Status'
+        end
+        item
+          MemberName = 'DatumPodnosenja'
+          Width = 147
+        end>
+    end
+  end
+end

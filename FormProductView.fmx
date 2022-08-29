@@ -1,0 +1,125 @@
+object frmProductView: TfrmProductView
+  Left = 420
+  Top = 90
+  Caption = 'Form1'
+  ClientHeight = 569
+  ClientWidth = 721
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  Left = 420
+  Top = 90
+  DesignerMasterStyle = 0
+  object Grid1: TGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 96.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 537.000000000000000000
+    Size.Height = 441.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    RowCount = 5
+    Viewport.Width = 537.000000000000000000
+    Viewport.Height = 441.000000000000000000
+  end
+  object Button2: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 144.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 54.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'DODAJ'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 408.000000000000000000
+    Position.Y = 517.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 52.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'OBRISI'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 568.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 54.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'AZURIRAJ'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = Button4Click
+  end
+  object backBtn: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = -5.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 142.000000000000000000
+    Size.Height = 56.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = '<- Nazad'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = backBtnClick
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 11
+    FilterChar = '0123456789'
+    Position.X = 320.000000000000000000
+    Position.Y = 528.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    Position.X = 320.000000000000000000
+    Position.Y = 504.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'Index'
+    TabOrder = 12
+  end
+  object Label7: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 721.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Pregled proizvoda'
+    TabOrder = 19
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = mainDataModul.queryPrikazProizvoda
+    ScopeMappings = <>
+    Left = 560
+    Top = 64
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 628
+    Top = 45
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <>
+    end
+  end
+end

@@ -1,0 +1,75 @@
+object frmStartView: TfrmStartView
+  Left = 558
+  Top = 96
+  Caption = 'Form1'
+  ClientHeight = 436
+  ClientWidth = 457
+  Position = Designed
+  SystemStatusBar.BackgroundColor = claRed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  Left = 558
+  Top = 96
+  DesignerMasterStyle = 0
+  object orderViewBtn: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 24.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'PREGLED - ZAHTEVA NABAVKE'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = orderViewBtnClick
+  end
+  object createOrderBtn: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 24.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'PREGLED PROIZVODA'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = createOrderBtnClick
+  end
+  object supplierViewBtn: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 24.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'PREGLED DOBAVLJACA'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = supplierViewBtnClick
+  end
+  object Button2: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 24.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'PREGLED PORUDZBENICA'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = Button2Click
+  end
+  object Label7: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 457.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'PREGLEDI'
+    TabOrder = 19
+  end
+end

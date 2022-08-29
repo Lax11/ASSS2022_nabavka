@@ -1,0 +1,253 @@
+object frmCreatePurchaseOrder: TfrmCreatePurchaseOrder
+  Left = 360
+  Top = 120
+  Caption = 'Form1'
+  ClientHeight = 529
+  ClientWidth = 840
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  OnShow = FormShow
+  Left = 360
+  Top = 120
+  DesignerMasterStyle = 0
+  object Grid1: TGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 168.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 489.000000000000000000
+    Size.Height = 401.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    RowCount = 0
+    Viewport.Width = 489.000000000000000000
+    Viewport.Height = 401.000000000000000000
+  end
+  object Label7: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 840.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'KREIRANJE PORUDZBENICE'
+    TabOrder = 19
+  end
+  object ComboBox1: TComboBox
+    Position.X = 656.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 26
+    OnChange = ComboBox1Change
+  end
+  object Label1: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 704.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = 'Dobavlja'#269
+    TabOrder = 30
+  end
+  object ComboBox2: TComboBox
+    Position.X = 656.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+  end
+  object Label2: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 712.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = 'Proizvod'
+    TabOrder = 24
+  end
+  object Label3: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 720.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = 'Koli'#269'ina'
+    TabOrder = 23
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 31
+    FilterChar = '0123456789'
+    Position.X = 656.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button1: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 512.000000000000000000
+    Position.Y = 472.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 33
+    Text = 'DODAJ'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = Button1Click
+  end
+  object Label4: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 392.000000000000000000
+    Position.Y = 448.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = 'Indeks'
+    TabOrder = 21
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 27
+    FilterChar = '0123456789'
+    Position.X = 376.000000000000000000
+    Position.Y = 472.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button2: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 184.000000000000000000
+    Position.Y = 472.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 32
+    Text = 'OBRISI'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 720.000000000000000000
+    Position.Y = 472.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 35
+    Text = 'KREIRAJ'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.Y = 472.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 34
+    Text = '<- Nazad'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = Button4Click
+  end
+  object Label5: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 48.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = 'Ime podnosioca'
+    TabOrder = 22
+  end
+  object Edit3: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 29
+    Position.Y = 80.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label6: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 592.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Proizvodi'
+    TabOrder = 36
+  end
+  object MaskToAlphaEffect1: TMaskToAlphaEffect
+  end
+  object ComboBox3: TComboBox
+    Position.X = 8.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 25
+  end
+  object Label8: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 72.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = 'Status'
+    TabOrder = 28
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = mainDataModul.queryPrikazProizvodaNovePorudzbenice
+    ScopeMappings = <>
+    Left = 784
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 732
+    Top = 65533
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <
+        item
+          MemberName = 'Indeks'
+          Width = 50
+        end
+        item
+          MemberName = 'ImeDobavljaca'
+        end
+        item
+          MemberName = 'ImeProizvoda'
+        end
+        item
+          MemberName = 'Kolicina'
+        end
+        item
+          MemberName = 'Cena'
+        end>
+    end
+  end
+end

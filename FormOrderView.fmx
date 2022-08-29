@@ -1,0 +1,145 @@
+object frmRequestOrderView: TfrmRequestOrderView
+  Left = 384
+  Top = 48
+  Caption = 'Form1'
+  ClientHeight = 645
+  ClientWidth = 840
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  OnShow = FormShow
+  Left = 384
+  Top = 48
+  DesignerMasterStyle = 0
+  object buttonNazad: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.Y = 600.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = '<- Nazad'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = backBtnClick
+  end
+  object Grid1: TGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 80.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 705.000000000000000000
+    Size.Height = 521.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    RowCount = 2
+    Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, HeaderClick, AutoDisplacement]
+    Viewport.Width = 705.000000000000000000
+    Viewport.Height = 521.000000000000000000
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 12
+    FilterChar = '0123456789'
+    Position.X = 352.000000000000000000
+    Position.Y = 600.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    Position.X = 328.000000000000000000
+    Position.Y = 576.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = ' Index'
+    TabOrder = 13
+  end
+  object Button4: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 672.000000000000000000
+    Position.Y = 600.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'KREIRANJE NOVOG ZAHTEVA'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.WordWrap = True
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 184.000000000000000000
+    Position.Y = 600.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'STAVKE ZAHTEVA'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.WordWrap = True
+    OnClick = Button1Click
+  end
+  object Label7: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 840.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'ZAHTEVI - NABAVKA'
+    TabOrder = 19
+  end
+  object Button6: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 440.000000000000000000
+    Position.Y = 600.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'BRISANJE ZAHTEVA'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.WordWrap = True
+    OnClick = Button6Click
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = mainDataModul.queryPrikazZahtevaZaNabavku
+    ScopeMappings = <>
+    Left = 656
+    Top = 24
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 700
+    Top = 29
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <
+        item
+          MemberName = 'Indeks'
+        end
+        item
+          MemberName = 'ImePodnosioca'
+        end
+        item
+          MemberName = 'Stanje'
+        end
+        item
+          MemberName = 'ImeHitnosti'
+        end
+        item
+          MemberName = 'DatumPodnosenja'
+          Width = 120
+        end>
+    end
+  end
+end

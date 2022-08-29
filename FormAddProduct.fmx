@@ -1,0 +1,166 @@
+object frmAddProduct: TfrmAddProduct
+  Left = 348
+  Top = 108
+  Caption = 'Form1'
+  ClientHeight = 541
+  ClientWidth = 850
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  OnShow = FormShow
+  Left = 348
+  Top = 108
+  DesignerMasterStyle = 0
+  object Grid1: TGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 344.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 497.000000000000000000
+    Size.Height = 465.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    RowCount = 1
+    Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, HeaderClick, AutoDisplacement]
+    Viewport.Width = 497.000000000000000000
+    Viewport.Height = 465.000000000000000000
+  end
+  object ComboBox1: TComboBox
+    Position.X = 64.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'ComboBox1Style1'
+    TabOrder = 1
+    OnChange = ComboBox1Change
+  end
+  object Label1: TLabel
+    Position.X = 64.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Dobavlja'#269'i'
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 2
+  end
+  object ComboBox2: TComboBox
+    Position.X = 64.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    FilterChar = '0123456789'
+    Position.X = 64.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label2: TLabel
+    Position.X = 64.000000000000000000
+    Position.Y = 208.000000000000000000
+    Text = 'Kolicina'
+    TabOrder = 5
+  end
+  object Label3: TLabel
+    Position.X = 64.000000000000000000
+    Position.Y = 136.000000000000000000
+    Text = 'Proizvodi'
+    TabOrder = 6
+  end
+  object Label4: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 344.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'Index'
+    TabOrder = 7
+  end
+  object Button1: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = -8.000000000000000000
+    Position.Y = 496.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = '< Nazad'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 208.000000000000000000
+    Position.Y = 376.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'BRISANJE'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 120.000000000000000000
+    Position.Y = 280.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    Text = 'DODAVANJE'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = Button3Click
+  end
+  object Edit3: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 18
+    FilterChar = '0123456789'
+    Position.X = 64.000000000000000000
+    Position.Y = 376.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label7: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 850.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'DODAVANJE PROIZVODA - ZAHTEV NABAVKE'
+    TabOrder = 20
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = mainDataModul.queryPrikazProizvodaNovogZ
+    ScopeMappings = <>
+    Left = 24
+    Top = 72
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <>
+    end
+  end
+end

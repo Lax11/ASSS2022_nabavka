@@ -1,0 +1,158 @@
+object frmSupplierView: TfrmSupplierView
+  Left = 288
+  Top = 132
+  Caption = 'Form1'
+  ClientHeight = 579
+  ClientWidth = 901
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  Left = 288
+  Top = 132
+  DesignerMasterStyle = 0
+  object StringGrid1: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 40.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 674.000000000000000000
+    Size.Height = 425.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    RowCount = 3
+    Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, HeaderClick, AutoDisplacement]
+    Viewport.Width = 674.000000000000000000
+    Viewport.Height = 425.000000000000000000
+  end
+  object backBtn: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.Y = 528.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 54.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = '<- Nazad'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = backBtnClick
+  end
+  object Button2: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 696.000000000000000000
+    Position.Y = 528.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'DODAJ'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 136.000000000000000000
+    Position.Y = 528.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'OBRISI'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 552.000000000000000000
+    Position.Y = 528.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 54.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'IZMENI'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = Button4Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 10
+    FilterChar = '0123456789'
+    Position.X = 456.000000000000000000
+    Position.Y = 528.000000000000000000
+    Size.Width = 84.000000000000000000
+    Size.Height = 89.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    Position.X = 448.000000000000000000
+    Position.Y = 504.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = ' Index'
+    TabOrder = 11
+  end
+  object Button1: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 280.000000000000000000
+    Position.Y = 528.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 54.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'PROIZVODI DOBAVLJACA'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.WordWrap = True
+    OnClick = Button1Click
+  end
+  object Label7: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 901.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'DOBAVLJACI'
+    TabOrder = 20
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = mainDataModul.queryPrikazDobavljaca
+    ScopeMappings = <>
+    Left = 744
+    Top = 48
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 740
+    Top = 29
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <
+        item
+          MemberName = 'IDTabele'
+          Header = 'Indeks'
+          Width = 50
+        end
+        item
+          MemberName = 'ImeDobavljaca'
+        end
+        item
+          MemberName = 'Zemlja'
+        end
+        item
+          MemberName = 'Grad'
+        end
+        item
+          MemberName = 'Ulica'
+        end
+        item
+          MemberName = 'Email'
+        end>
+    end
+  end
+end

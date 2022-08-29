@@ -1,0 +1,96 @@
+object frmSignUp: TfrmSignUp
+  Left = 594
+  Top = 132
+  Caption = 'Form1'
+  ClientHeight = 463
+  ClientWidth = 603
+  Position = Designed
+  SystemStatusBar.BackgroundColor = claRed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  Left = 594
+  Top = 132
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 61.000000000000000000
+    Position.Y = 105.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = 'Korisni'#269'ko ime'
+    TabOrder = 3
+  end
+  object Label2: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 453.000000000000000000
+    Position.Y = 97.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = #352'ifra'
+    TabOrder = 1
+  end
+  object signInBtn: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 40.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'PRIJAVA'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = signInBtnClick
+  end
+  object usernameEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 7
+    TextSettings.Font.Size = 14.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object passwordEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Password = True
+    TextSettings.Font.Size = 14.000000000000000000
+    Position.X = 352.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object signUpBtn: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 312.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'REGISTRACIJA'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = signUpBtnClick
+  end
+  object Label6: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 603.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'NABAVKA'
+    TabOrder = 17
+  end
+end
